@@ -1,0 +1,219 @@
+*{
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+a{
+  font-weight: bold;
+  text-decoration: none!important;
+}
+header{
+  margin-bottom: 200px;
+}
+
+.bg-custom{
+  background-color: #ECF0F1;
+}
+.color-custom{
+  color: #34495E!important;
+}
+.bg-color-custom{
+  background-color: #34495E!important;
+}
+.bold{
+  font-weight: 900;
+}
+nav a:hover {
+  font-weight: 900;
+  transition: 0.3s;
+}
+.logo{
+  width: 50%;
+}
+section img{
+  width: 27%;
+}
+.carousel{
+  height: 600px!important;
+}
+.separacion{
+  margin-bottom: 1em;
+}
+.padding{
+  padding-bottom: 5em!important;
+}
+#experiencia, #formacion, #formulario{
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin-bottom: 4em;
+
+}
+.botones{
+  border: 2px black solid;
+  border-radius: .5em;
+  padding: 1em 1em;
+  background-color:#dbd8d8;
+}
+.botones:hover{
+  background-color:#c2bfbf;
+  transition: 0.3s;
+}
+
+/* FORMACIÓN */
+.cartaBorde{
+  padding: 0!important;
+  margin: 1em 1em!important;
+}
+
+/* FORMULARIO */
+.focus{
+  border: 2px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+ 
+}
+
+
+
+@media (max-width: 780px) {
+  nav a{
+    font-size: 2em!important;
+    margin: 1em 0;
+  }
+  .primer img{
+    width: 95%;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    align-items: flex-end!important;
+  }
+ 
+}
+
+
+
+
+
+/* BARRAS DE SKILLS */
+.skills {
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #07374a;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background:#34495E;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 95%;
+}
+.progress-line .bootstrap {
+  width: 75%;
+}
+.progress-line .javascript {
+  width: 80%;
+}
+.progress-line .docker {
+  width: 80%;
+}
+.progress-line .java {
+  width: 85%;
+}
+.progress-line .PHP {
+  width: 95%;
+}
+
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background:#34495E;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.progress-line .html::after {
+  content: "95%";
+}
+.progress-line .java::after {
+  content: "85%";
+}
+.progress-line .bootstrap::after {
+  content: "75%";
+}
+.progress-line .javascript::after {
+  content: "80%";
+}
+.progress-line .docker::after {
+  content: "80%";
+}
+.progress-line .PHP::after {
+  content: "95%";
+}
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}      
