@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -410,7 +411,7 @@
 
     <h1 id="habilidades" class="h1 text-center py-1 color-custom bold mb-3">Skills</h1>
     
-<div>
+<div class="d-flex justify-content-center align-items-center">
     <div id="skills" class="row container d-flex justify-content-center align-items-center">
         <div class="col-sm-12">
             <div class="d-grid gap-2">
@@ -459,55 +460,7 @@
     </div>
 </div>
  
-<h1 class="h1 text-center py-1 color-custom bold mt-5 mb-4">Contacta conmigo</h1>
-<form id="contacto" class="container bg-color-custom rounded">
-    <div class="row mb-4 pt-5">
-      <div class="col">
-        <div class="form-outline">
-          <input type="text" id="nombre" class="form-control" maxlength="16" minlength="3" required/>
-          <label class="form-label text-white" for="nombre">Nombre</label>
-        </div>
-      </div>
-      <div class="col">
-        <div class="form-outline">
-          <input type="text" id="apellidos" class="form-control" maxlength="30" minlength="3" required/>
-          <label class="form-label text-white" for="apellidos">Apellidos</label>
-        </div>
-      </div>
-    </div>
-  
 
-    <div class="form-outline mb-4">
-      <input type="text" id="empresa" class="form-control" maxlength="30" minlength="3"/>
-      <label class="form-label text-white" for="empresa">Nombre de empresa (opcional)</label>
-    </div>
-  
-
-    <div class="form-outline mb-4">
-      <input type="text" id="direccion" class="form-control" maxlength="40" minlength="5" required/>
-      <label class="form-label text-white" for="direccion">Dirección</label>
-    </div>
-
-    <div class="form-outline mb-4">
-      <input type="email" id="email" class="form-control" required/>
-      <label class="form-label text-white" for="email">Email</label>
-    </div>
-  
-
-    <div class="form-outline mb-4">
-      <input type="number" id="telefono" class="form-control" min="9" required />
-      <label class="form-label text-white" for="telefono">Teléfono</label>
-    </div>
-
-    <div class="form-outline mb-4">
-      <textarea class="form-control" id="motivo" rows="4" maxlength="1000" minlength="3" required></textarea>
-      <label class="form-label text-white" for="motivo">Motivo de contacto</label>
-    </div>
-  
-
-    <button type="submit" class="botones mb-2">Enviar</button>
-    <p class="pb-5 text-white">Formulario no funcional. No se enviarán datos</p>
-  </form>
        
     </main>
     <footer id="footer" class="container p-4 rounded d-flex justify-content-between align-items-center">
